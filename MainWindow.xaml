@@ -1,0 +1,28 @@
+﻿<Window x:Class="File_Creator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:File_Creator"
+        mc:Ignorable="d"
+        Title="TTT's Dummy File Creator" Height="250" Width="720">
+
+    <Grid>
+        <Image Source="Pictures/taco.png" HorizontalAlignment="Right" Height="60" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="69" RenderTransformOrigin="0.025,0.923">
+        </Image>
+        <Button Content="Browse" HorizontalAlignment="Right" Margin="0,10,10,0" VerticalAlignment="Top" Width="80" Height="30" Click="Button_Click" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Dummy File Path:" VerticalAlignment="Top" FontSize="22" Height="31" Width="170"/>
+        <TextBlock x:Name="FilePathLabel" HorizontalAlignment="Left" Height="30" Margin="192,12,0,0" VerticalAlignment="Top" Width="425" FontSize="20" TextWrapping="Wrap" TextTrimming="WordEllipsis"><Run Text="C:\file"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="10,60,0,0" TextWrapping="Wrap" Text="Dummy File Size:" VerticalAlignment="Top" FontSize="22" Height="30" Width="170"/>
+        <TextBox x:Name="fileSizeAmount" HorizontalAlignment="Left" Height="30" Margin="192,60,0,0" Text="1&#xD;&#xA;" VerticalAlignment="Top" Width="358" FontSize="22" HorizontalContentAlignment="Right" TextDecorations="{x:Null}" AcceptsReturn="False" AcceptsTab="False" MaxLines="1" MinLines="1" />
+        <ComboBox x:Name="fileSizeUnit" HorizontalAlignment="Left" Height="30" Margin="555,60,0,0" VerticalAlignment="Top" Width="147" SelectedIndex="3" VerticalContentAlignment="Center" RenderTransformOrigin="0.664,0.141" FontSize="18">
+            <ComboBoxItem Content="Byte(s)" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="KB" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="MB" HorizontalAlignment="Left" Width="92"/>
+            <ComboBoxItem Content="GB" HorizontalAlignment="Left" Width="92"/>
+        </ComboBox>
+        <CheckBox Content="Random file content (non-compressible)" HorizontalAlignment="Left" Margin="192,95,0,0" VerticalAlignment="Top" Height="30" Width="510" FontSize="22" VerticalContentAlignment="Center" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <Button Content="Create File" HorizontalAlignment="Center" Height="70" Margin="10,139,423,10" VerticalAlignment="Center" Width="279" FontSize="48" Background="#FFC8C8C8" Click="Button_Click_2"/>
+        <Button Content="Quick Memes" HorizontalAlignment="Center" Height="70" Margin="294,139,84,10" VerticalAlignment="Center" Width="334" FontSize="48" Background="#FFC8C8C8" Click="Button_Click_1"/>
+    </Grid>
+</Window>
