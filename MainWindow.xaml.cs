@@ -19,8 +19,6 @@ namespace File_Creator
         private string _FileSizeUnit = "GB";
         private bool   _FileRandom = false;
 
-        private bool   OpenedMemes = false;
-
         public MainWindow()
         {
             InitializeComponent();
@@ -109,22 +107,6 @@ namespace File_Creator
         private void CheckBox_Unchecked(object sender, RoutedEventArgs e)
         {
             _FileRandom = false;
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            if (!OpenedMemes)
-            {
-                MessageBoxResult result = MessageBox.Show("Quickest memes I could find.\r\nView at your own risk!\r\nThere are 9 memes, can u find them all?", "TTT Meme provider", MessageBoxButton.OKCancel, MessageBoxImage.Warning);
-
-                OpenedMemes = true;
-
-                if (result == MessageBoxResult.Cancel)
-                    return;
-            }
-
-            MemeWindow meme = new MemeWindow();
-            meme.Show();
         }
     }
 }

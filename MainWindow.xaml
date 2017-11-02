@@ -8,8 +8,7 @@
         Title="TTT's Dummy File Creator" Height="250" Width="720">
 
     <Grid>
-        <Image Source="Pictures/taco.png" HorizontalAlignment="Right" Height="60" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="69" RenderTransformOrigin="0.025,0.923">
-        </Image>
+        <Image Source="Pictures/taco.png" HorizontalAlignment="Right" Height="60" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="69" RenderTransformOrigin="0.025,0.923"/>
         <Button Content="Browse" HorizontalAlignment="Right" Margin="0,10,10,0" VerticalAlignment="Top" Width="80" Height="30" Click="Button_Click" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Dummy File Path:" VerticalAlignment="Top" FontSize="22" Height="31" Width="170"/>
         <TextBlock x:Name="FilePathLabel" HorizontalAlignment="Left" Height="30" Margin="192,12,0,0" VerticalAlignment="Top" Width="425" FontSize="20" TextWrapping="Wrap" TextTrimming="WordEllipsis"><Run Text="C:\file"/><LineBreak/><Run/></TextBlock>
@@ -22,7 +21,6 @@
             <ComboBoxItem Content="GB" HorizontalAlignment="Left" Width="92"/>
         </ComboBox>
         <CheckBox Content="Random file content (non-compressible)" HorizontalAlignment="Left" Margin="192,95,0,0" VerticalAlignment="Top" Height="30" Width="510" FontSize="22" VerticalContentAlignment="Center" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
-        <Button Content="Create File" HorizontalAlignment="Center" Height="70" Margin="10,139,423,10" VerticalAlignment="Center" Width="279" FontSize="48" Background="#FFC8C8C8" Click="Button_Click_2"/>
-        <Button Content="Quick Memes" HorizontalAlignment="Center" Height="70" Margin="294,139,84,10" VerticalAlignment="Center" Width="334" FontSize="48" Background="#FFC8C8C8" Click="Button_Click_1"/>
+        <Button Content="Create File" HorizontalAlignment="Center" Height="70" Margin="10,139,84,10" VerticalAlignment="Center" Width="618" FontSize="48" Background="#FFC8C8C8" Click="Button_Click_2"/>
     </Grid>
 </Window>
